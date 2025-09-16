@@ -1,14 +1,13 @@
-/* ====== Global / Root ====== */
 :root {
-	--bg: #0f1020;
-	--panel: #17182b;
-	--text: #e8e8f0;
-	--muted: #b9b9c9;
-	--primary: #7c4dff;
-	--primary-600: #6a3df0;
-	--accent: #ff8a65;
-	--success: #00c853;
-	--shadow: rgba(0, 0, 0, 0.35);
+	--bg: #fff0f5;
+	--panel: #ffe6ee;
+	--text: #4a2c2a;
+	--muted: #9a6b7a;
+	--primary: #ff69b4;
+	--primary-600: #ff1493;
+	--accent: #ff8da1;
+	--success: #4caf50;
+	--shadow: rgba(0, 0, 0, 0.18);
 }
 
 *,
@@ -20,20 +19,17 @@
 html,
 body {
 	height: 100%;
-}
-
-body {
 	margin: 0;
-	font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-	background: radial-gradient(1200px 800px at 10% -10%, #1a1b33 0%, var(--bg) 55%);
+	font-family: "Inter", system-ui, sans-serif;
+	background: #fffcfd;
 	color: var(--text);
 	line-height: 1.6;
 }
 
-/* Containers & layout */
+
 .container {
 	width: min(100%, 1000px);
-	margin-inline: auto;
+	margin: 0 auto;
 	padding: 16px;
 }
 
@@ -47,14 +43,13 @@ body {
 
 .content-box {
 	background: var(--panel);
-	border: 1px solid #262744;
+	border: 1px solid #f6c8d5;
 	border-radius: 14px;
 	padding: 18px 20px;
 }
 
-/* ====== Header & Nav ====== */
 .header-section {
-	background: linear-gradient(180deg, #17182b 0%, rgba(23, 24, 43, 0) 100%);
+	background: linear-gradient(180deg, #ffd1dc 0%, rgba(255, 209, 220, 0) 100%);
 	padding-top: 18px;
 }
 
@@ -77,9 +72,9 @@ body {
 }
 
 .navbar {
-	background: #14152a;
-	border-top: 1px solid #1f2040;
-	border-bottom: 1px solid #1f2040;
+	background: #ffd1dc;
+	border-top: 1px solid #f5a9b8;
+	border-bottom: 1px solid #f5a9b8;
 }
 
 .nav-container {
@@ -96,12 +91,12 @@ body {
 	border-radius: 10px;
 	text-decoration: none;
 	color: var(--text);
-	transition: transform 160ms ease, background-color 160ms ease, color 160ms ease;
+	transition: 160ms ease;
 }
 
 .nav-link:hover,
 .nav-link:focus-visible {
-	background: #1f2140;
+	background: #f8bcd4;
 	color: #fff;
 	transform: translateY(-1px);
 }
@@ -111,7 +106,6 @@ body {
 	color: #fff;
 }
 
-/* ====== Typography ====== */
 .section-heading {
 	font-size: clamp(20px, 3.2vw, 28px);
 	font-weight: 700;
@@ -151,21 +145,19 @@ body {
 	text-decoration: underline;
 }
 
-/* fun badge */
 .highlight-badge {
 	display: inline-block;
-	background: #22234a;
-	border: 1px solid #2b2d5a;
+	background: #ffe0ea;
+	border: 1px solid #f6c8d5;
 	padding: 8px 12px;
 	border-radius: 999px;
 }
 
-/* ====== Images ====== */
 .featured-image {
 	display: block;
 	margin-inline: auto;
 	border-radius: 12px;
-	border: 3px solid #2a2b50;
+	border: 3px solid #ffd1dc;
 	box-shadow: 0 10px 20px var(--shadow);
 }
 
@@ -176,35 +168,32 @@ body {
 	font-size: 14px;
 }
 
-/* ====== Video ====== */
 .video-container {
 	background: var(--panel);
 	border-radius: 14px;
 	padding: 12px;
-	border: 1px solid #262744;
+	border: 1px solid #f6c8d5;
 }
 
 .video-frame {
 	width: 100%;
 	aspect-ratio: 16 / 9;
-	/* keeps video responsive */
 	border: 0;
 	border-radius: 10px;
 	box-shadow: 0 10px 20px var(--shadow);
 }
 
-/* ====== Table (Schedule) ====== */
 .table {
 	width: 100%;
 	border-collapse: collapse;
 	background: var(--panel);
-	border: 1px solid #262744;
+	border: 1px solid #f6c8d5;
 	border-radius: 12px;
 	overflow: hidden;
 }
 
 .table thead th {
-	background: #1e2050;
+	background: #ff5c8a;
 	color: #fff;
 	text-align: left;
 	padding: 12px 10px;
@@ -214,32 +203,31 @@ body {
 .table tbody th,
 .table td {
 	padding: 10px;
-	border-top: 1px solid #262744;
+	border-top: 1px solid #f6c8d5;
 	vertical-align: top;
 	color: var(--text);
 }
 
 .table tbody tr:nth-child(odd) td,
 .table tbody tr:nth-child(odd) th[scope="row"] {
-	background: #181936;
+	background: #ffeef3;
 }
 
 .table-schedule th[scope="row"] {
 	width: 160px;
-	color: #c9c9e8;
+	color: #b66b7a;
 }
 
-/* ====== Buttons ====== */
 .btn {
 	display: inline-block;
-	border: 1px solid #2a2b55;
-	background: #20224a;
-	color: #fff;
+	border: 1px solid #f4a6b0;
+	background: #f8c8dc;
+	color: #4a2c2a;
 	text-decoration: none;
 	border-radius: 10px;
 	padding: 10px 14px;
 	font-weight: 600;
-	transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+	transition: 160ms ease;
 }
 
 .btn:hover,
@@ -251,6 +239,7 @@ body {
 .btn-primary {
 	background: var(--primary);
 	border-color: var(--primary-600);
+	color: #fff;
 }
 
 .btn-primary:hover,
@@ -259,22 +248,21 @@ body {
 }
 
 .btn-secondary {
-	background: #262955;
+	background: #f4c2c2;
+	color: #4a2c2a;
 }
 
 .btn-hover-effect {
 	transition: all 180ms ease;
 }
 
-/* ====== Cards & Shadows ====== */
 .card-shadow {
 	box-shadow: 0 12px 24px var(--shadow);
 }
 
-/* ====== Forms ====== */
 .form {
 	background: var(--panel);
-	border: 1px solid #262744;
+	border: 1px solid #f6c8d5;
 	border-radius: 14px;
 	padding: 18px;
 }
@@ -293,16 +281,21 @@ body {
 	width: 100%;
 	padding: 10px 12px;
 	border-radius: 10px;
-	border: 1px solid #2a2b55;
-	background: #17193a;
+	border: 1px solid #f4a6b0;
+	background: #ffeef3;
 	color: var(--text);
 	outline: none;
-	transition: border-color 160ms ease, box-shadow 160ms ease;
+	transition: 160ms ease;
+}
+
+.form-input::placeholder {
+	color: #b68694;
 }
 
 .form-input:focus {
 	border-color: var(--primary);
-	box-shadow: 0 0 0 3px rgba(124, 77, 255, 0.25);
+	box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.25);
+	background: #fff5f8;
 }
 
 .textarea-input {
@@ -321,10 +314,9 @@ body {
 	flex-wrap: wrap;
 }
 
-/* ====== Footer ====== */
 .footer-bg {
-	background: #111127;
-	border-top: 1px solid #1f2040;
+	background: #ffe2ea;
+	border-top: 1px solid #f5a9b8;
 }
 
 .site-footer {
@@ -338,7 +330,6 @@ body {
 	font-size: 14px;
 }
 
-/* ====== Accessibility helpers ====== */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -348,7 +339,6 @@ textarea:focus-visible {
 	outline-offset: 2px;
 }
 
-/* ====== Utilities ====== */
 .menu-list {
 	display: grid;
 	gap: 8px;
